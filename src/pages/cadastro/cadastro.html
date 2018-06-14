@@ -1,0 +1,43 @@
+<ion-header>
+
+  <ion-navbar color="danger">
+    <ion-title>Cadastro Progamação</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label stacked>Nome do Filme</ion-label>
+      <ion-input type="text" [(ngModel)]="filme.filme"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label stacked>Tipo</ion-label>
+      <ion-input type="text" [(ngModel)]="filme.tipo"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Horário</ion-label>
+      <ion-input type="text"[(ngModel)]="filme.horario"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Local</ion-label>
+      <ion-input type="text" [(ngModel)]="filme.local"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Data</ion-label>
+      <ion-input type="text" [(ngModel)]="filme.data"></ion-input>
+    </ion-item>
+
+    <ion-item>
+    <button (click)="Cadastro(filme)" block ion-button color="danger">Cadastrar Progamação</button>
+    </ion-item>
+  
+  </ion-list>
+
+</ion-content>

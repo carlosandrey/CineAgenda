@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar color="danger">
+    <ion-title>Pagina Inicial</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="card-background-page">
+<ion-slides pager>
+
+  <ion-slide style="background-color: #fff; color:black">
+  <img src="../assets/imgs/slide01.gif">
+  </ion-slide>
+
+  <ion-slide style="background-color: #fff">
+    <ion-card (click)="GoProgramcao()">
+        <img src="../assets/imgs/calendar.gif">
+        <h1>Veja a Programação</h1>
+    </ion-card>
+  
+  </ion-slide>
+
+  <ion-slide style="background-color: #fff; color:black">
+  <ion-card (click)="GoCadastro()">
+    <img src="../assets/imgs/cadastro.png"/><h1><b>Cadastre Uma Programação</b></h1>
+    
+  </ion-card>
+  
+
+  </ion-slide>
+
+</ion-slides>
+</ion-content>
